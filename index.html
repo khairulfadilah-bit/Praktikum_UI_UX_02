@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Sepatu</title>
+</head>
+<body>
+    <header style="text-align: center;">
+      <h1>Selamat datang di Toko Sepatu Lari kami</h1>
+      <p>Silahkan isi form pemesanan dengan lengkap dan benar:</p>
+    </header><hr>
+    <form action="contoh.html" method="get">
+        <fieldset>
+            <legend><strong>Data Costumer</strong></legend>
+                <div style="width:200px; height:200px; border:1px solid #000; background-color: #ffffff;">
+                    <img id="image"style="width:100%; height:100%;">
+                </div><br>
+                <input type="file" id="image" name="image">
+            <p>
+                <label for="costumername">Nama:</label>
+                <input type="text" id="costumername" name="costumername" required>
+            </p>
+            <p>
+                <label for="address">Alamat:</label>
+                <input type="text" id="address" name="address" required>
+            </p>
+            <p>
+                <label for="telepon">No. Telepon:</label>
+                <input type="number" id="telepon" name="telepon" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="instruction">Instruksi</label><br>
+                <textarea name="instruction" id="instruction" cols="50" rows="4" maxlength="400" placeholder="no more than 400 character"></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Pilih Sepatu yang kamu inginkan</strong></legend>
+            <p>pilih salah satu</p>
+
+            <p> Merek Sepatu</p>
+            <p>
+                <input type="radio" id="Jenis" name="Jenis" value="Adidas" required>
+                <label for="Jenis">Adidas</label><br>
+
+                <input type="radio" id="Jenis" name="Jenis" value="Nike" required>
+                <label for="Jenis">Nike</label><br>
+
+                <input type="radio" id="Jenis" name="Jenis" value="HOKA" required>
+                <label for="Jenis">HOKA</label><br>
+
+                <input type="radio" id="Jenis" name="Jenis" value="New Balance" required>
+                <label for="Jenis">New Balance</label><br>
+
+                <input type="radio" id="Jenis" name="Jenis" value="PUMA" required>
+                <label for="Jenis">PUMA</label><br>
+
+                <input type="radio" id="Jenis" name="Jenis" value="Ortuseight" required>
+                <label for="Jenis">Ortuseight</label><br>
+
+                <input type="radio" id="Jenis" name="Jenis" value="Specs" required>
+                <label for="Jenis">Specs</label><br>
+
+                <input type="radio" id="Jenis" name="Jenis" value="Nineteen" required>
+                <label for="Jenis">Nineteen</label><br>
+            </p>
+             <p> Bonus Tambahan</p>
+    
+            <p>
+                <input type="checkbox" id="Bonus" name="Bonus" value="Gantungan Kunci">
+                <label for="Bonus">Gantungan Kunci</label><br>
+
+                <input type="checkbox" id="Bonus" name="Bonus" value="Stiker">
+                <label for="Bonus">Stiker</label><br>
+
+                <input type="checkbox" id="Bonus" name="Bonus" value="Tali Sepatu">
+                <label for="Bonus">Tali Sepatu</label><br>
+            </p>
+            <p>
+                <label for="quantity"> Ukuran Sepatu:</label>
+                <select name="quantity" id="quantity" required>
+                    <option value="">--Pilih Ukuran--</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                </select>
+            </p>
+            <p>
+                <label for="quantity"> jumlah Pesanan:</label>
+                <select name="quantity" id="quantity" required>
+                    <option value="">--Pilih Jumlah Pesanan--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Metode Pembayaran</strong></legend>
+            
+            <p>
+                <input type="radio" id="Metode" name="Metode" value="E-Wallet" required>
+                <label for="Metode">E-Wallet</label><br>
+
+                <input type="radio" id="Metode" name="Metode" value="QRIS" required>
+                <label for="Metode">QRIS</label><br>
+
+                <input type="radio" id="Metode" name="Metode" value="M-Banking" required>
+                <label for="Metode">M-Banking</label><br>
+
+                <input type="radio" id="Metode" name="Metode" value="Kartu Debit" required>
+                <label for="Metode">Kartu Debit</label><br>
+
+                <input type="radio" id="Metode" name="Metode" value="Kartu Kredit" required>
+                <label for="Metode">Kartu Kredit</label><br>
+
+                <input type="radio" id="Metode" name="Metode" value="Paylater" required>
+                <label for="Metode">Paylater</label><br>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
